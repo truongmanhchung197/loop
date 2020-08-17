@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"> 0<br>1</p>
+
+</body>
+</html>
+<script>
+    let count=0;
+    let number=prompt("Nhập vào số các số Fibonacci cần tính tổng: ");
+    let f0=0;
+    let f1=1;
+    let sum=1;
+    while (count<number-2){
+        f2=f0+f1;
+        sum=sum+f2;
+        f0=f1;
+        f1=f2;
+        count=count+1;
+    }
+    document.getElementById("demo").innerHTML="Tổng của "+number+" số đầu tiên dãy Fibonacci là: "+sum;
+</script>

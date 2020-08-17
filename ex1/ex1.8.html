@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hãy thử đoán xem!</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let min=parseInt(prompt("Bạn muốn đoán số trong khoảng từ số nhỏ nhất là :"));
+    let max=parseInt(prompt("Bạn muốn đoán số trong khoảng dến số lớn nhất là :"));
+    let ran=Math.round(Math.random()*(max-min)+min);
+    let i;
+    for(i=1;i<=3;i++){
+        let gue=parseInt(prompt("Nhập vào số bạn đoán: "));
+        if(gue===ran){
+            alert("Chúc mừng bạn đã thắng");
+            break;
+        } else if(gue<ran){
+            alert("Số đã đoán nhỏ hơn");
+        } else{
+            alert("Số đã đoán lớn hơn");
+        }
+    }
+</script>

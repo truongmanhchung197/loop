@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+
+</body>
+</html>
+<script>
+    let m=parseInt(prompt("Nhập vào chiều dài: "));
+    let n=parseInt(prompt("Nhập vào chiều rộng: "));
+    for(let k=1;k<=n;k++){
+        for(let i=1;i<=m;i++){
+            if (i==1||i==m||k==1||k==n){
+                document.getElementById("demo").innerHTML+="*"
+            } else {
+                document.getElementById("demo").innerHTML+="&nbsp;&nbsp;"
+            }
+        }
+        document.getElementById("demo").innerHTML+="<br>"
+    }
+</script>

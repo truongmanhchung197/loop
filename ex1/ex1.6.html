@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let count=0;
+    let sum=0;
+    let number=prompt("Nhập số các số chia hết cho 7 càn tính tổng: ");
+    for (let N=0;count<number;N++) {
+        if (N % 7 === 0) {
+            sum = sum + N;
+            count=count+1;
+        }
+    }
+    alert("Tổng của "+number+" số tự nhiên chia hết cho 7 đầu tiên là: "+sum);
+</script>

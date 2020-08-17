@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"> </p>
+
+</body>
+</html>
+<script>
+    let mon=prompt("Nhâp vào số tiên ban đầu: ");
+    let num=prompt("Nhâp vào số tháng cho vay: ");
+    let per=prompt("Nhập vào lãi xuất hàng tháng (%): ");
+    let res=mon;
+    for (let i=1;i<=num;i++){
+        res=res*(1+per/100);
+    }
+    document.getElementById("demo").innerHTML="Số tiền lãi là: "+(res-mon)
+</script>

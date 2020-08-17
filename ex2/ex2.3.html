@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table width="7%">
+<tr>
+    <td><p id="demo"></p></td>
+</tr>
+<tr>
+    <td><p id="demo1" align="right"></p></td>
+</tr>
+    <tr>
+        <td><p id="demo2"></p></td>
+    </tr>
+    <tr>
+        <td><p id="demo3" align="right"></p></td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    let text="";
+    for(let i=1;i<=11;i++){
+        text=text+"*";
+        document.getElementById("demo").innerHTML+=text+"<br>";
+        document.getElementById("demo1").innerHTML+=text+"<br>";
+
+    }
+    for(let i=0;i<=11;i++){
+        let text2="***********";
+        text2=text2.slice(i,11);
+        document.getElementById("demo2").innerHTML+=text2+"<br>";
+        document.getElementById("demo3").innerHTML+=text2+"<br>";
+    }
+
+</script>
